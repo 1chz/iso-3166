@@ -11,29 +11,29 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class CountryCodesTests {
     @Test
     void getAlpha2() {
-        String actual = CountryCodes.KR.getAlpha2();
         String expected = "KR";
+        String actual = CountryCodes.KR.getAlpha2();
         assertEquals(expected, actual);
     }
 
     @Test
     void getAlpha3() {
-        String actual = CountryCodes.KR.getAlpha3();
         String expected = "KOR";
+        String actual = CountryCodes.KR.getAlpha3();
         assertEquals(expected, actual);
     }
 
     @Test
     void getNumeric() {
-        int actual = CountryCodes.KR.getNumeric();
         int expected = 410;
+        int actual = CountryCodes.KR.getNumeric();
         assertEquals(expected, actual);
     }
 
     @Test
     void getNumericLeftPad() {
-        String actual = CountryCodes.KR.getNumericLeftPad();
         String expected = "410";
+        String actual = CountryCodes.KR.getNumericLeftPad();
         assertEquals(expected, actual);
     }
 
