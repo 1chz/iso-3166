@@ -1,6 +1,5 @@
 package io.github.shirohoo.iso3166;
 
-import io.github.shirohoo.iso3166.CountryCodes;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
