@@ -1328,8 +1328,7 @@ public enum CountryCodes {
     /**
      * 주어진 <a href="http://en.wikipedia.org/wiki/ISO_3166-1_numeric">ISO 3166-1</a> 숫자  코드에 해당하는 CountryCode를 가져옵니다.
      *
-     * @param code
-     *         code – <a href="http://en.wikipedia.org/wiki/ISO_3166-1_numeric">ISO 3166-1</a> 숫자  코드입니다.
+     * @param code <a href="http://en.wikipedia.org/wiki/ISO_3166-1_numeric">ISO 3166-1</a> 숫자  코드입니다.
      *
      * @return CountryCode 인스턴스
      */
@@ -1341,8 +1340,7 @@ public enum CountryCodes {
      * 주어진 <a href="http://en.wikipedia.org/wiki/ISO_3166-1_numeric">ISO 3166-1</a> <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">alpha-2</a>  또는 <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">alpha-3</a> 코드에 해당하는 CountryCode를
      * 가져옵니다.
      *
-     * @param code
-     *         code – <a href="http://en.wikipedia.org/wiki/ISO_3166-1_numeric">ISO 3166-1</a> <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">alpha-2</a>  또는 <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">alpha-3</a>  코드입니다.
+     * @param code <a href="http://en.wikipedia.org/wiki/ISO_3166-1_numeric">ISO 3166-1</a> <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">alpha-2</a>  또는 <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">alpha-3</a>  코드입니다.
      *
      * @return CountryCode 인스턴스
      */
