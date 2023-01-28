@@ -1,4 +1,4 @@
-package io.github.shirohoo.iso3166;
+package io.github.olivahn.iso3166;
 
 import java.util.Map;
 import java.util.Optional;
@@ -1260,15 +1260,14 @@ public enum CountryCodes {
      * <a href="http://en.wikipedia.org/wiki/Zimbabwe">Zimbabwe</a>
      */
     ZW("Zimbabwe", "ZWE", 716),
+
     ;
 
-    private static final Map<String, CountryCodes> ALPHA2_MAP = stream(values())
+    private static final Map<String, CountryCodes> ALPHA2 = stream(values())
             .collect(toMap(CountryCodes::getAlpha2, identity()));
-
-    private static final Map<String, CountryCodes> ALPHA3_MAP = stream(values())
+    private static final Map<String, CountryCodes> ALPHA3 = stream(values())
             .collect(toMap(CountryCodes::getAlpha3, identity()));
-
-    private static final Map<Integer, CountryCodes> NUMERIC_MAP = stream(values())
+    private static final Map<Integer, CountryCodes> NUMERIC = stream(values())
             .collect(toMap(CountryCodes::getNumeric, identity()));
 
     private final String name;
@@ -1335,7 +1334,7 @@ public enum CountryCodes {
      * @return CountryCode 인스턴스
      */
     public static Optional<CountryCodes> getByCode(int code) {
-        return Optional.ofNullable(NUMERIC_MAP.get(code));
+        return Optional.ofNullable(NUMERIC.getOrDefault(code, null));
     }
 
     /**
@@ -1352,10 +1351,10 @@ public enum CountryCodes {
             return Optional.empty();
         }
         if (code.length() == 2) {
-            return Optional.ofNullable(ALPHA2_MAP.get(code));
+            return Optional.ofNullable(ALPHA2.getOrDefault(code, null));
         }
         if (code.length() == 3) {
-            return Optional.ofNullable(ALPHA3_MAP.get(code));
+            return Optional.ofNullable(ALPHA3.getOrDefault(code, null));
         }
         return Optional.empty();
     }

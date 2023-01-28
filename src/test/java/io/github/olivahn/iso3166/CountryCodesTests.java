@@ -1,6 +1,5 @@
-package io.github.shirohoo.iso3166;
+package io.github.olivahn.iso3166;
 
-import io.github.shirohoo.iso3166.CountryCodes;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
@@ -11,30 +10,38 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class CountryCodesTests {
     @Test
     void getAlpha2() {
-        String actual = CountryCodes.KR.getAlpha2();
-        String expected = "KR";
-        assertEquals(expected, actual);
+        CountryCodes sut = CountryCodes.KR;
+
+        String actual = sut.getAlpha2();
+
+        assertEquals("KR", actual);
     }
 
     @Test
     void getAlpha3() {
-        String actual = CountryCodes.KR.getAlpha3();
-        String expected = "KOR";
-        assertEquals(expected, actual);
+        CountryCodes sut = CountryCodes.KR;
+
+        String actual = sut.getAlpha3();
+
+        assertEquals("KOR", actual);
     }
 
     @Test
     void getNumeric() {
-        int actual = CountryCodes.KR.getNumeric();
-        int expected = 410;
-        assertEquals(expected, actual);
+        CountryCodes sut = CountryCodes.KR;
+
+        int actual = sut.getNumeric();
+
+        assertEquals(410, actual);
     }
 
     @Test
     void getNumericLeftPad() {
-        String actual = CountryCodes.KR.getNumericLeftPad();
-        String expected = "410";
-        assertEquals(expected, actual);
+        CountryCodes sut = CountryCodes.KR;
+
+        String actual = sut.getNumericLeftPad();
+
+        assertEquals("410", actual);
     }
 
     @Test
