@@ -1,4 +1,4 @@
-package io.github.olivahn.iso3166;
+package io.github.shirohoo.iso3166;
 
 import java.util.Map;
 import java.util.Optional;

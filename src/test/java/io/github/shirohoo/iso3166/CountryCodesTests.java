@@ -1,4 +1,4 @@
-package io.github.olivahn.iso3166;
+package io.github.shirohoo.iso3166;
 
 import org.junit.jupiter.api.Test;
 
